@@ -1,0 +1,58 @@
+export const MENTORS = [
+  {
+    id: 1,
+    name: "Sarah Miller",
+    role: "Senior Frontend Engineer",
+    company: "Google",
+    location: "London, UK",
+    expertise: ["React", "TypeScript", "System Design"],
+    rating: 4.9,
+    reviews: 120,
+    price: "$50/session",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&auto=format&fit=crop&q=60",
+    bio: "I have over 8 years of experience building scalable frontend applications at top tech companies. I love mentoring junior developers and helping them navigate their career paths.",
+    availability: ["Mon 10:00 AM", "Wed 2:00 PM", "Fri 4:00 PM"]
+  },
+  {
+    id: 2,
+    name: "David Chen",
+    role: "Full Stack Developer",
+    company: "Netflix",
+    location: "San Francisco, CA",
+    expertise: ["Node.js", "React", "AWS"],
+    rating: 5.0,
+    reviews: 85,
+    price: "$70/session",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&auto=format&fit=crop&q=60",
+    bio: "Passionate about full-stack development and cloud architecture. I can help you with backend challenges, API design, and deploying your apps to the cloud.",
+    availability: ["Tue 11:00 AM", "Thu 1:00 PM", "Sat 10:00 AM"]
+  },
+  {
+    id: 3,
+    name: "Emily Davis",
+    role: "Product Designer",
+    company: "Spotify",
+    location: "Stockholm, SE",
+    expertise: ["UI/UX", "Figma", "User Research"],
+    rating: 4.8,
+    reviews: 200,
+    price: "$45/session",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&auto=format&fit=crop&q=60",
+    bio: "Design is not just about how things look, but how they work. I can mentor you on UX principles, creating design systems, and building your design portfolio.",
+    availability: ["Mon 3:00 PM", "Wed 10:00 AM", "Fri 1:00 PM"]
+  },
+  {
+    id: 4,
+    name: "Michael Wilson",
+    role: "Backend Engineer",
+    company: "Amazon",
+    location: "Seattle, WA",
+    expertise: ["Java", "Microservices", "System Design"],
+    rating: 4.7,
+    reviews: 150,
+    price: "$60/session",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&auto=format&fit=crop&q=60",
+    bio: "Backend systems are the backbone of any application. I specialize in distributed systems and can help you master server-side programming.",
+    availability: ["Tue 4:00 PM", "Thu 11:00 AM", "Sat 2:00 PM"]
+  },
+];
