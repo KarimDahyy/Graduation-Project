@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Save, User, Bell, Shield, Trash2 } from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/Card";
@@ -21,6 +22,7 @@ export function Settings() {
 
   const handleSaveProfile = () => {
     storage.set("user_profile", profile);
+    toast.success("Profile updated successfully!");
     // Simulate API delay
     const btn = document.getElementById("save-btn");
     if (btn) {

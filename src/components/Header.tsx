@@ -58,7 +58,7 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 w-full items-center border-b bg-background/95 px-6 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-30 flex h-16 w-full items-center border-b bg-background/70 px-6 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="flex w-full items-center justify-between">
         {/* Search Bar */}
         <div className="flex w-1/3 items-center" ref={searchRef}>

@@ -1,4 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { Toaster } from 'sonner';
 import { MainLayout } from './layouts/MainLayout';
 import { Landing } from './pages/Landing';
 import { AuthLayout } from './layouts/AuthLayout';
@@ -21,9 +23,14 @@ import { AdminLogin } from './pages/admin/AdminLogin';
 import { AdminDashboard } from './pages/admin/AdminDashboard';
 
 function App() {
+  const location = useLocation();
+  
   return (
-    <Routes>
-      <Route path="/" element={<Landing />} />
+    <>
+      <Toaster position="top-right" richColors theme="system" />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Landing />} />
       <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
@@ -48,7 +55,9 @@ function App() {
         <Route path="register" element={<Register />} />
       </Route>
       <Route path="/assessment" element={<Assessment />} />
-    </Routes>
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
