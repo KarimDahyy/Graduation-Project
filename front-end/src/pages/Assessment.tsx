@@ -7,8 +7,16 @@ import { cn } from "../lib/utils";
 import { storage } from "../lib/storage";
 
 // Mock Data
-const INTERESTS = ["Web Development", "Data Science", "Cybersecurity", "Mobile Apps", "AI/ML", "Cloud Computing"];
-const TRAITS = ["Analytical", "Creative", "Leader", "Introvert", "Extrovert", "Team Player"];
+const INTERESTS = [
+  "Web Development", "Data Science", "Cybersecurity", "Mobile Apps", 
+  "AI/ML", "Cloud Computing", "UI/UX Design", "Game Development", 
+  "Blockchain", "DevOps", "Digital Marketing", "Product Management"
+];
+const TRAITS = [
+  "Analytical", "Creative", "Leader", "Introvert", 
+  "Extrovert", "Team Player", "Problem Solver", "Adaptable", 
+  "Detail-Oriented", "Communicator"
+];
 
 export function Assessment() {
   const navigate = useNavigate();
@@ -220,8 +228,8 @@ export function Assessment() {
                     <h2 className="text-2xl font-extrabold text-[#11233E] mb-1 tracking-tight">Your Top Skills</h2>
                     <p className="text-[#11233E]/60 text-base">Select up to 5 skills or traits.</p>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {TRAITS.concat(["HTML", "CSS", "JavaScript", "React", "Python"]).map(skill => (
+                  <div className="flex flex-wrap gap-2 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
+                    {TRAITS.concat(["HTML", "CSS", "JavaScript", "React", "Python", "Node.js", "SQL", "TypeScript", "Figma", "Git"]).map(skill => (
                       <div
                         key={skill}
                         onClick={() => toggleSelection("selectedTraits", skill)}
