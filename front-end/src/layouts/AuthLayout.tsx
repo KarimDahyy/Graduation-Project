@@ -1,20 +1,36 @@
 import { Outlet, Link } from "react-router-dom";
 
-import { ThemeToggle } from "../components/ui/ThemeToggle";
-
 export function AuthLayout() {
   return (
-    <div className="flex min-h-screen bg-muted/50">
-      <div className="flex flex-1 flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mb-8 flex w-full max-w-md items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+    <div className="flex min-h-screen items-center justify-center bg-[#f5f7fa] p-4 font-sans">
+      <div className="flex w-full max-w-[950px] bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_40px_rgb(0,0,0,0.08)] h-[550px] max-h-[85vh] relative flex-shrink-0">
+        
+        {/* Left Side: Illustration */}
+        <div className="hidden md:flex w-[40%] bg-[#fffdf9] items-center justify-center p-6 border-r border-gray-100 relative">
+          <Link to="/" className="absolute top-6 left-6 flex items-center space-x-2 z-10">
             <img src="/logo.png" alt="CareerCompass" className="h-8 w-8 object-contain rounded-full shadow-sm" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">CareerCompass</span>
+            <span className="text-xl font-bold text-[#11233E]">CareerCompass</span>
           </Link>
-          <ThemeToggle />
+          <img 
+            src="/assessment-illustration.png" 
+            alt="Career Compass Illustration" 
+            className="w-full h-full object-contain drop-shadow-sm"
+          />
         </div>
-        <div className="w-full max-w-md space-y-8">
-          <Outlet />
+
+        {/* Right Side: Form Content (Login / Register) */}
+        <div className="w-full md:w-[60%] p-6 md:p-10 flex flex-col relative overflow-y-auto custom-scrollbar">
+          {/* Mobile Logo Logo */}
+          <div className="md:hidden mb-6 flex justify-center w-full shrink-0">
+            <Link to="/" className="flex items-center space-x-2">
+              <img src="/logo.png" alt="CareerCompass" className="h-8 w-8 object-contain rounded-full shadow-sm" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">CareerCompass</span>
+            </Link>
+          </div>
+          
+          <div className="flex-1 flex flex-col justify-center max-w-[400px] mx-auto w-full">
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
