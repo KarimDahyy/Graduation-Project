@@ -6,20 +6,16 @@ export function AuthLayout() {
       <div className="flex w-full max-w-[950px] bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_40px_rgb(0,0,0,0.08)] h-[550px] max-h-[85vh] relative flex-shrink-0">
         
         {/* Left Side: Illustration */}
-        <div className="hidden md:flex w-[40%] bg-[#fffdf9] items-center justify-center p-6 border-r border-gray-100 relative">
-          <Link to="/" className="absolute top-6 left-6 flex items-center space-x-2 z-10">
-            <img src="/logo.png" alt="CareerCompass" className="h-8 w-8 object-contain rounded-full shadow-sm" />
-            <span className="text-xl font-bold text-[#11233E]">CareerCompass</span>
-          </Link>
+        <div className="hidden md:flex w-[40%] bg-[#fffdf9] items-center justify-center p-8 border-r border-gray-100">
           <img 
             src="/assessment-illustration.png" 
             alt="Career Compass Illustration" 
-            className="w-full h-full object-contain drop-shadow-sm"
+            className="w-full h-[90%] object-contain drop-shadow-md"
           />
         </div>
 
         {/* Right Side: Form Content (Login / Register) */}
-        <div className="w-full md:w-[60%] p-6 md:p-10 flex flex-col relative overflow-y-auto custom-scrollbar">
+        <div className="w-full md:w-[60%] p-6 md:p-10 flex flex-col relative overflow-hidden">
           {/* Mobile Logo Logo */}
           <div className="md:hidden mb-6 flex justify-center w-full shrink-0">
             <Link to="/" className="flex items-center space-x-2">
