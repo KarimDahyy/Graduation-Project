@@ -70,5 +70,74 @@ export const JOBS = [
       "Remote work options",
       "Opportunity to work on diverse projects"
     ]
+  },
+  {
+    id: 4,
+    title: "Senior Backend Engineer",
+    company: "DataFlow",
+    location: "Remote",
+    type: "Full-time",
+    salary: "$90k - $120k",
+    tags: ["Node.js", "Python", "AWS", "SQL"],
+    posted: "12 hours ago",
+    description: "Join DataFlow's core infrastructure team to build robust APIs and scalable distributed systems serving millions of users globally.",
+    requirements: [
+      "5+ years of experience in backend development",
+      "Expertise in Node.js or Python",
+      "Experience with cloud services (AWS preferred)",
+      "Strong database design skills (SQL and NoSQL)"
+    ],
+    benefits: [
+      "Fully remote work environment",
+      "Comprehensive medical and dental coverage",
+      "Annual tech allowance",
+      "Flexible working hours"
+    ]
+  },
+  {
+    id: 5,
+    title: "Product Manager",
+    company: "InnovateTech",
+    location: "Cairo, Egypt",
+    type: "Full-time",
+    salary: "Competitive",
+    tags: ["Product", "Agile", "Strategy"],
+    posted: "3 days ago",
+    description: "We are seeking a visionary Product Manager to lead cross-functional teams in exploring, designing, and launching high-impact B2B features.",
+    requirements: [
+      "3+ years in product management",
+      "Strong analytical and problem-solving skills",
+      "Experience with Agile/Scrum methodologies",
+      "Excellent communication and presentation abilities"
+    ],
+    benefits: [
+      "Bonus structure based on performance",
+      "Health insurance",
+      "Professional development budget",
+      "Great office culture"
+    ]
+  },
+  {
+    id: 6,
+    title: "DevOps Specialist",
+    company: "CloudSync",
+    location: "Hybrid / Alexandria",
+    type: "Full-time",
+    salary: "$50k - $75k",
+    tags: ["Docker", "Kubernetes", "CI/CD"],
+    posted: "Just now",
+    description: "Looking for an enthusiastic DevOps specialist to automate deployments, manage CI/CD pipelines, and maintain our cloud infrastructure.",
+    requirements: [
+      "Solid understanding of Docker and containerization",
+      "Experience setting up CI/CD pipelines (GitHub Actions, Jenkins)",
+      "Basic understanding of Kubernetes",
+      "Scripting skills (Bash, Python)"
+    ],
+    benefits: [
+      "Hybrid work schedule",
+      "Continuous learning programs",
+      "Paid certifications (AWS/Azure)",
+      "Vibrant team environment"
+    ]
   }
 ];

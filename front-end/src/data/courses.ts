@@ -118,5 +118,45 @@ export const COURSES = [
     ],
     students: 1500,
     lastUpdated: "Oct 2023"
+  },
+  {
+    id: 7,
+    title: "Fullstack Next.js 14 Masterclass",
+    instructor: "Lee Robinson",
+    duration: "10h 45m",
+    rating: 4.9,
+    level: "Intermediate",
+    category: "Development",
+    image: "https://images.unsplash.com/photo-1618477247222-ac60c747d79b?w=400&h=250&auto=format&fit=crop&q=60",
+    tags: ["Next.js", "React", "Server Components"],
+    description: "Learn Next.js from the ground up, including the App Router, Server Components, Server Actions, and deploying full-stack apps seamlessly.",
+    syllabus: [
+      { title: "Routing and Layouts", duration: "1h 30m" },
+      { title: "Data Fetching & Caching", duration: "2h 45m" },
+      { title: "Authentication with Auth.js", duration: "2h 00m" },
+      { title: "Deployment on Vercel", duration: "1h 00m" }
+    ],
+    students: 5400,
+    lastUpdated: "April 2024"
+  },
+  {
+    id: 8,
+    title: "System Design for Technical Interviews",
+    instructor: "Alex Xu",
+    duration: "14h 20m",
+    rating: 4.8,
+    level: "Advanced",
+    category: "Architecture",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&auto=format&fit=crop&q=60",
+    tags: ["System Design", "Architecture", "Scaling"],
+    description: "Crack your tech interviews by learning how to design large-scale, distributed systems. Real-world case studies for Chat Apps, Rate Limiters, and Video Streaming.",
+    syllabus: [
+      { title: "System Design Framework", duration: "1h 30m" },
+      { title: "Design a Rate Limiter", duration: "2h 00m" },
+      { title: "Design WhatsApp", duration: "3h 00m" },
+      { title: "Design Netflix Streaming", duration: "3h 30m" }
+    ],
+    students: 8200,
+    lastUpdated: "May 2024"
   }
 ];

@@ -40,7 +40,7 @@ export function Mentors() {
         {filteredMentors.map((mentor) => (
           <Card 
             key={mentor.id} 
-            className="overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
+            className="flex flex-col h-full overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
             onClick={() => navigate(`/dashboard/mentors/${mentor.id}`)}
           >
             <div className="aspect-square w-full overflow-hidden bg-muted relative">
@@ -77,7 +77,7 @@ export function Mentors() {
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex gap-2">
+            <CardFooter className="p-4 pt-0 flex gap-2 mt-auto">
               <Button className="w-full flex-1" size="sm">
                 View Profile
               </Button>

@@ -55,4 +55,32 @@ export const MENTORS = [
     bio: "Backend systems are the backbone of any application. I specialize in distributed systems and can help you master server-side programming.",
     availability: ["Tue 4:00 PM", "Thu 11:00 AM", "Sat 2:00 PM"]
   },
+  {
+    id: 5,
+    name: "Karim Dahy",
+    role: "Senior Software Engineer",
+    company: "Tech Lead",
+    location: "Cairo, EGY",
+    expertise: ["Web Development", "Frontend", "UI/UX"],
+    rating: 5.0,
+    reviews: 240,
+    price: "$80/session",
+    image: "/Karim Dahy.jpg",
+    bio: "Passionate software engineer with deep expertise in web technologies. Dedicated to helping developers master both technical skills and architectural thinking.",
+    availability: ["Sun 6:00 PM", "Tue 8:00 PM", "Thu 6:00 PM"]
+  },
+  {
+    id: 6,
+    name: "Mohamed Galal",
+    role: "Full Stack Lead",
+    company: "Engineering Hub",
+    location: "Cairo, EGY",
+    expertise: ["Backend", "Cloud Architecture", "System Design"],
+    rating: 4.9,
+    reviews: 180,
+    price: "$75/session",
+    image: "/Mohamed Galal.jpg",
+    bio: "Experienced full-stack architect focusing on building scalable distributed systems and mentoring the next generation of top-tier engineers.",
+    availability: ["Mon 5:00 PM", "Wed 7:00 PM", "Sat 4:00 PM"]
+  }
 ];
