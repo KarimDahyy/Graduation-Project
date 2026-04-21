@@ -1,15 +1,15 @@
 export const MENTORS = [
   {
     id: 1,
-    name: "Sarah Miller",
+    name: "Cristiano Ronaldo",
     role: "Senior Frontend Engineer",
-    company: "Google",
-    location: "London, UK",
+    company: "El Nasr FC",
+    location: "Riyad, SA",
     expertise: ["React", "TypeScript", "System Design"],
-    rating: 4.9,
-    reviews: 120,
-    price: "$50/session",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&auto=format&fit=crop&q=60",
+    rating: 5.0,
+    reviews: 1120,
+    price: "$950/session",
+    image: "/mentor1.jpg",
     bio: "I have over 8 years of experience building scalable frontend applications at top tech companies. I love mentoring junior developers and helping them navigate their career paths.",
     availability: ["Mon 10:00 AM", "Wed 2:00 PM", "Fri 4:00 PM"]
   },
