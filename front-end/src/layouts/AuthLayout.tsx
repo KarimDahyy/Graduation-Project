@@ -10,7 +10,7 @@ export function AuthLayout() {
           <img 
             src="/assessment-illustration.png" 
             alt="Career Compass Illustration" 
-            className="w-full h-[90%] object-contain drop-shadow-md"
+            className="w-full h-full p-4 object-contain drop-shadow-md"
           />
         </div>
 
