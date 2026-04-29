@@ -61,10 +61,10 @@ export const MENTORS = [
     role: "Senior Software Engineer",
     company: "Tech Lead",
     location: "Cairo, EGY",
-    expertise: ["Web Development", "Frontend", "UI/UX", "Big Dick"],
-    rating: 3.0,
+    expertise: ["Web Development", "Frontend", "UI/UX"],
+    rating: 5.0,
     reviews: 240,
-    price: "$880/session",
+    price: "$80/session",
     image: "/Karim Dahy.jpg",
     bio: "Passionate software engineer with deep expertise in web technologies. Dedicated to helping developers master both technical skills and architectural thinking.",
     availability: ["Sun 6:00 PM", "Tue 8:00 PM", "Thu 6:00 PM"]
@@ -75,12 +75,26 @@ export const MENTORS = [
     role: "Full Stack Lead",
     company: "Engineering Hub",
     location: "Cairo, EGY",
-    expertise: ["Small Dick","Fluffy Bzaz","Backend", "Cloud Architecture", "System Design"],
+    expertise: ["Backend", "Cloud Architecture", "System Design"],
     rating: 4.9,
     reviews: 180,
-    price: "$975/session",
+    price: "$75/session",
     image: "/Mohamed Galal.jpg",
     bio: "Experienced full-stack architect focusing on building scalable distributed systems and mentoring the next generation of top-tier engineers.",
     availability: ["Mon 5:00 PM", "Wed 7:00 PM", "Sat 4:00 PM"]
+  },
+  {
+    id: 7,
+    name: "Salah Salah",
+    role: "Data Scientist",
+    company: "Data Insights",
+    location: "Cairo, EGY",
+    expertise: ["Python", "Machine Learning", "Data Analysis"],
+    rating: 4.8,
+    reviews: 120,
+    price: "$70/session",
+    image: "/Salah Salah.gif",
+    bio: "Dedicated data scientist with a passion for uncovering insights from complex datasets and building predictive models.",
+    availability: ["Mon 2:00 PM", "Wed 4:00 PM", "Fri 1:00 PM"]
   }
 ];

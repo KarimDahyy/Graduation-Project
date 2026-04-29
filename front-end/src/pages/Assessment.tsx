@@ -27,6 +27,8 @@ export function Assessment() {
 
   const [formData, setFormData] = useState(() => storage.get("assessment_data", {
     university: "",
+    dateOfBirth: "",
+    gender: "",
     location: "",
     selectedInterests: [] as string[],
     selectedTraits: [] as string[],
@@ -145,30 +147,63 @@ export function Assessment() {
 
           <div className="flex-1 flex flex-col justify-center">
             {step === 1 && (
-              <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-500">
+              <div className="space-y-3 animate-in fade-in slide-in-from-right-4 duration-500">
                 <div>
-                  <h2 className="text-2xl font-extrabold text-[#11233E] mb-1 tracking-tight">Tell us about yourself</h2>
-                  <p className="text-[#11233E]/60 text-base">Start by sharing some basic information.</p>
+                  <h2 className="text-xl font-extrabold text-[#11233E] mb-0.5 tracking-tight">Tell us about yourself</h2>
+                  <p className="text-[#11233E]/60 text-sm">Start by sharing some basic information.</p>
                 </div>
-                <div className="space-y-4">
-                  <div className="space-y-1.5">
-                    <label className="text-sm font-semibold text-[#11233E]">University / College</label>
-                    <Input 
-                      value={formData.university} 
-                      onChange={(e) => setFormData({...formData, university: e.target.value})}
-                      placeholder="e.g. Cairo University" 
-                      className="rounded-xl border-gray-200 h-11 bg-gray-50/50 focus:bg-white"
-                    />
+                <div className="space-y-3">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-1">
+                      <label className="text-xs font-semibold text-[#11233E]">
+                        University / College{" "}
+                        <span className="text-xs font-normal text-gray-400">(Optional)</span>
+                      </label>
+                      <Input 
+                        value={formData.university} 
+                        onChange={(e) => setFormData({...formData, university: e.target.value})}
+                        placeholder="e.g. Cairo University" 
+                        className="rounded-xl border-gray-200 h-9 text-sm bg-gray-50/50 focus:bg-white"
+                      />
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-xs font-semibold text-[#11233E]">Date of Birth</label>
+                      <Input 
+                        type="date"
+                        value={formData.dateOfBirth} 
+                        onChange={(e) => setFormData({...formData, dateOfBirth: e.target.value})}
+                        className="rounded-xl border-gray-200 h-9 text-sm bg-gray-50/50 focus:bg-white"
+                      />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-[#11233E]">Where are you located?</label>
+                  <div className="space-y-1">
+                    <label className="text-xs font-semibold text-[#11233E]">Gender</label>
+                    <div className="grid grid-cols-3 gap-2">
+                      {["Male", "Female", "Prefer not to say"].map(g => (
+                        <div
+                          key={g}
+                          onClick={() => setFormData({...formData, gender: g})}
+                          className={cn(
+                            "cursor-pointer rounded-xl border-2 py-1.5 text-xs text-center font-medium transition-all hover:bg-gray-50",
+                            formData.gender === g
+                              ? "border-[#11233E] bg-[#11233E]/5 text-[#11233E]"
+                              : "border-gray-100 bg-white text-gray-500"
+                          )}
+                        >
+                          {g}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-semibold text-[#11233E]">Where are you located?</label>
                     <div className="grid grid-cols-3 gap-2">
                        {["Cairo", "Giza", "Alexandria", "Remote", "Other"].map(loc => (
                           <div 
                             key={loc}
                             onClick={() => setFormData({...formData, location: loc})}
                             className={cn(
-                              "cursor-pointer rounded-xl border-2 p-2 text-sm text-center font-medium transition-all hover:bg-gray-50",
+                              "cursor-pointer rounded-xl border-2 py-1.5 text-xs text-center font-medium transition-all hover:bg-gray-50",
                               formData.location === loc
                                 ? "border-[#11233E] bg-[#11233E]/5 text-[#11233E]"
                                 : "border-gray-100 bg-white text-gray-500"
