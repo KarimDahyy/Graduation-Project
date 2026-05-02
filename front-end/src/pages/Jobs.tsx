@@ -19,13 +19,13 @@ export function Jobs() {
         {JOBS.map((job) => (
           <Card 
             key={job.id} 
-            className="flex flex-col hover:shadow-lg transition-shadow cursor-pointer group"
+            className="flex flex-col shadow-sm transition-shadow cursor-pointer"
             onClick={() => navigate(`/dashboard/jobs/${job.id}`)}
           >
             <CardHeader>
               <div className="flex justify-between items-start">
                 <div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{job.title}</CardTitle>
+                  <CardTitle className="text-xl">{job.title}</CardTitle>
                   <CardDescription className="font-medium mt-1">{job.company}</CardDescription>
                 </div>
                 <Badge variant="outline">{job.type}</Badge>
@@ -55,7 +55,7 @@ export function Jobs() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+              <Button variant="outline" className="w-full">
                 View Details
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

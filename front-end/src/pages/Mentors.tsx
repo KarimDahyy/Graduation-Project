@@ -40,21 +40,20 @@ export function Mentors() {
         {filteredMentors.map((mentor) => (
           <Card 
             key={mentor.id} 
-            className="flex flex-col h-full overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
+            className="flex flex-col h-full overflow-hidden shadow-sm transition-all duration-300 cursor-pointer"
             onClick={() => navigate(`/dashboard/mentors/${mentor.id}`)}
           >
             <div className="aspect-square w-full overflow-hidden bg-muted relative">
               <img 
                 src={mentor.image} 
                 alt={mentor.name} 
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>
             <CardHeader className="p-4">
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="font-semibold group-hover:text-primary transition-colors">{mentor.name}</h3>
+                  <h3 className="font-semibold">{mentor.name}</h3>
                   <p className="text-sm text-muted-foreground">{mentor.role}</p>
                   <p className="text-xs text-muted-foreground">at {mentor.company}</p>
                 </div>

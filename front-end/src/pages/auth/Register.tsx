@@ -30,7 +30,7 @@ export function Register() {
           <Input id="password" type="password" placeholder="••••••••" className="rounded-xl border-gray-200 h-11 bg-gray-50/50 focus:bg-white" />
         </div>
         <Link to="/assessment" className="block pt-2">
-          <Button className="w-full bg-[#11233E] hover:bg-[#1c3559] text-white font-semibold rounded-xl h-11 shadow-md transition-all">
+          <Button className="w-full bg-[#11233E] hover:bg-[#d4a34b] text-white font-semibold rounded-xl h-11 shadow-md transition-all">
             Create Account
           </Button>
         </Link>
@@ -38,7 +38,7 @@ export function Register() {
 
       <div className="text-center text-sm text-[#11233E]/60">
         Already have an account?{" "}
-        <Link to="/auth/login" className="font-semibold text-[#D4A34B] hover:underline hover:text-[#c0913f]">
+        <Link to="/auth/login" className="font-semibold text-[#d4a34b] hover:underline hover:text-[#c0913f]">
           Sign in
         </Link>
       </div>

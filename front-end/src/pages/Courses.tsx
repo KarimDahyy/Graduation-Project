@@ -56,16 +56,15 @@ export function Courses() {
         {filteredCourses.map(course => (
           <Card 
             key={course.id} 
-            className="flex flex-col overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            className="flex flex-col overflow-hidden shadow-sm transition-all duration-300 cursor-pointer"
             onClick={() => navigate(`/dashboard/courses/${course.id}`)}
           >
             <div className="aspect-video w-full overflow-hidden bg-muted relative">
               <img 
                 src={course.image} 
                 alt={course.title} 
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>
             <CardHeader className="p-4">
               <div className="flex justify-between items-start mb-2">
@@ -75,7 +74,7 @@ export function Courses() {
                   {course.rating}
                 </div>
               </div>
-              <CardTitle className="text-lg leading-tight group-hover:text-primary transition-colors">{course.title}</CardTitle>
+              <CardTitle className="text-lg leading-tight">{course.title}</CardTitle>
               <CardDescription className="text-sm mt-1">by {course.instructor}</CardDescription>
             </CardHeader>
             <CardContent className="p-4 pt-0 flex-1">
@@ -92,7 +91,7 @@ export function Courses() {
                 <Clock className="mr-1 h-3 w-3" />
                 {course.duration}
               </div>
-              <Button size="sm" variant="ghost" className="hover:bg-primary/10 hover:text-primary p-0 h-auto font-medium">View Course</Button>
+              <Button size="sm" variant="ghost" className="p-0 h-auto font-medium">View Course</Button>
             </CardFooter>
           </Card>
         ))}
