@@ -15,7 +15,7 @@ export function Dashboard() {
       {/* Top 3 Cards */}
       <div className="grid gap-6 md:grid-cols-3">
         {/* Card 1 */}
-        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 transition-transform hover:scale-[1.02] cursor-pointer" onClick={() => navigate("/dashboard/roadmap")}>
+        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 cursor-pointer" onClick={() => navigate("/dashboard/roadmap")}>
           <div className="flex items-center justify-between mb-4">
             <span className="text-gray-500 font-medium">Career Path</span>
             <div className="h-8 w-8 rounded-full bg-[#D4A34B] flex items-center justify-center text-white">
@@ -27,7 +27,7 @@ export function Dashboard() {
         </Card>
 
         {/* Card 2 */}
-        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 transition-transform hover:scale-[1.02] cursor-pointer" onClick={() => navigate("/dashboard/courses")}>
+        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 cursor-pointer" onClick={() => navigate("/dashboard/courses")}>
           <div className="flex items-center justify-between mb-4">
             <span className="text-gray-500 font-medium">Modules Completed</span>
             <div className="h-8 w-8 rounded-full bg-[#D4A34B] flex items-center justify-center text-white">
@@ -43,7 +43,7 @@ export function Dashboard() {
         </Card>
 
         {/* Card 3 */}
-        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 transition-transform hover:scale-[1.02] cursor-pointer" onClick={() => navigate("/dashboard/skills")}>
+        <Card className="rounded-2xl border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white p-6 pb-8 cursor-pointer" onClick={() => navigate("/dashboard/skills")}>
           <div className="flex items-center justify-between mb-4">
             <span className="text-gray-500 font-medium">Skill Score</span>
             <div className="h-8 w-8 rounded-full bg-[#D4A34B] flex items-center justify-center text-white">
@@ -79,7 +79,7 @@ export function Dashboard() {
               <h4 className="text-2xl font-bold text-[#11233E] mb-6">React Framework</h4>
               <Button 
                 onClick={() => navigate("/dashboard/courses")}
-                className="bg-[#D4A34B] hover:bg-[#D4A34B]/90 text-[#11233E] font-bold rounded-full px-8 shadow-md hover:shadow-lg transition-all"
+                className="bg-[#D4A34B] text-[#11233E] font-bold rounded-full px-8 shadow-md"
               >
                 Continue
               </Button>
@@ -93,34 +93,34 @@ export function Dashboard() {
           
           <div className="space-y-4">
             {/* Action 1 */}
-            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none hover:shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all cursor-pointer" onClick={() => navigate("/dashboard/courses")}>
+            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none cursor-pointer" onClick={() => navigate("/dashboard/courses")}>
               <div>
                 <p className="font-semibold text-[#11233E]">Complete 'React Basics'</p>
                 <p className="text-sm text-gray-500 mt-1 font-medium">Due in 2 days</p>
               </div>
-              <Button className="bg-[#D4A34B] hover:bg-[#D4A34B]/90 text-[#11233E] font-bold rounded-full px-6 shadow-sm">
+              <Button className="bg-[#D4A34B] text-[#11233E] font-bold rounded-full px-6 shadow-sm">
                 Start Course
               </Button>
             </div>
 
             {/* Action 2 */}
-            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none hover:shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all cursor-pointer" onClick={() => navigate("/dashboard/mentors")}>
+            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none cursor-pointer" onClick={() => navigate("/dashboard/mentors")}>
               <div>
                 <p className="font-semibold text-[#11233E]">Book a Mentor</p>
                 <p className="text-sm text-gray-500 mt-1 font-medium">Unlock next level</p>
               </div>
-              <Button className="bg-[#D4A34B] hover:bg-[#D4A34B]/90 text-[#11233E] font-bold rounded-full px-6 shadow-sm">
+              <Button className="bg-[#D4A34B] text-[#11233E] font-bold rounded-full px-6 shadow-sm">
                 Book Now
               </Button>
             </div>
 
             {/* Action 3 */}
-            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none hover:shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all cursor-pointer" onClick={() => navigate("/dashboard/skills")}>
+            <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border-none cursor-pointer" onClick={() => navigate("/dashboard/skills")}>
               <div>
                 <p className="font-semibold text-[#11233E]">Take Skill Assessment</p>
                 <p className="text-sm text-gray-500 mt-1 font-medium">Update your score</p>
               </div>
-              <Button className="bg-[#D4A34B] hover:bg-[#D4A34B]/90 text-[#11233E] font-bold rounded-full px-6 shadow-sm">
+              <Button className="bg-[#D4A34B] text-[#11233E] font-bold rounded-full px-6 shadow-sm">
                 Take Quiz
               </Button>
             </div>

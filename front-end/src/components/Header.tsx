@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { Bell, Search, ChevronRight, User, BookOpen, Map, Settings } from "lucide-react";
+import { Bell, Search, ChevronRight, User, BookOpen, Map, Settings, Briefcase } from "lucide-react";
 import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
-import { ThemeToggle } from "./ui/ThemeToggle";
 import { useNavigate } from "react-router-dom";
 import { cn } from "../lib/utils";
 
@@ -22,8 +21,6 @@ const NOTIFICATIONS = [
   { id: 2, title: "Mentor Request", desc: "Sarah Miller accepted your request.", time: "5h ago", unread: true },
   { id: 3, title: "Milestone Unlocked", desc: "You completed 'JavaScript Basics'.", time: "1d ago", unread: false },
 ];
-
-import { Briefcase } from "lucide-react";
 
 export function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -86,7 +83,7 @@ export function Header() {
                       <button
                         key={item.href}
                         onClick={() => handleNavigate(item.href)}
-                        className="flex w-full items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground cursor-pointer"
+                        className="flex w-full items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none cursor-pointer"
                       >
                         <item.icon className="h-4 w-4 text-muted-foreground" />
                         <span>{item.title}</span>
@@ -101,8 +98,6 @@ export function Header() {
         </div>
         
         <div className="flex items-center gap-4">
-          <ThemeToggle />
-          
           {/* Notifications */}
           <div className="relative" ref={notifRef}>
             <Button 
@@ -135,10 +130,6 @@ export function Header() {
                 </div>
               </div>
             )}
-          </div>
-
-          <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs ring-2 ring-background">
-            AD
           </div>
         </div>
       </div>
