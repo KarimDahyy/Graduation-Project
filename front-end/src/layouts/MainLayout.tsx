@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sidebar } from "../components/Sidebar";
 import { Header } from "../components/Header";
+import { AdBanner } from "../components/AdBanner";
 
 export function MainLayout() {
   const location = useLocation();
@@ -26,6 +27,7 @@ export function MainLayout() {
           </AnimatePresence>
         </main>
       </div>
+      <AdBanner />
     </div>
   );
 }

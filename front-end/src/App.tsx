@@ -6,6 +6,7 @@ import { Landing } from './pages/Landing';
 import { AuthLayout } from './layouts/AuthLayout';
 import { Login } from './pages/auth/Login';
 import { Register } from './pages/auth/Register';
+import { ForgotPassword } from './pages/auth/ForgotPassword';
 import { Assessment } from './pages/Assessment';
 import { Dashboard } from './pages/Dashboard';
 import { Roadmap } from './pages/Roadmap';
@@ -53,6 +54,7 @@ function App() {
       <Route path="/auth" element={<AuthLayout />}>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
       </Route>
       <Route path="/assessment" element={<Assessment />} />
         </Routes>
