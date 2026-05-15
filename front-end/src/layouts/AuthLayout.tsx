@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 
 export function AuthLayout() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#f5f7fa] p-4 font-sans">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#11233E] via-[#1c3a60] to-[#11233E] p-4 font-sans">
       <div className="flex w-full max-w-[950px] bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_40px_rgb(0,0,0,0.08)] h-[550px] max-h-[85vh] relative flex-shrink-0">
         
         {/* Left Side: Illustration */}
