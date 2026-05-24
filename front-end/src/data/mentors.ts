@@ -70,20 +70,6 @@ export const MENTORS = [
     availability: ["Sun 6:00 PM", "Tue 8:00 PM", "Thu 6:00 PM"]
   },
   {
-    id: 6,
-    name: "Mohamed Galal",
-    role: "Full Stack Lead",
-    company: "Engineering Hub",
-    location: "Cairo, EGY",
-    expertise: ["Backend", "Cloud Architecture", "System Design"],
-    rating: 4.9,
-    reviews: 180,
-    price: "$75/session",
-    image: "/Mohamed Galal.jpg",
-    bio: "Experienced full-stack architect focusing on building scalable distributed systems and mentoring the next generation of top-tier engineers.",
-    availability: ["Mon 5:00 PM", "Wed 7:00 PM", "Sat 4:00 PM"]
-  },
-  {
     id: 7,
     name: "Salah Salah",
     role: "Data Scientist",
