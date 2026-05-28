@@ -126,8 +126,8 @@ export const COURSES = [
     duration: "10h 45m",
     rating: 4.9,
     level: "Intermediate",
-    category: "Development",
-    image: "https://images.unsplash.com/photo-1618477247222-ac60c747d79b?w=400&h=250&auto=format&fit=crop&q=60",
+      category: "Development",
+      image: "https://miro.medium.com/v2/resize:fit:1400/1*y13qyTAxvTlDdNbzXCjuPw.png",
     tags: ["Next.js", "React", "Server Components"],
     description: "Learn Next.js from the ground up, including the App Router, Server Components, Server Actions, and deploying full-stack apps seamlessly.",
     syllabus: [
@@ -298,5 +298,45 @@ export const COURSES = [
     ],
     students: 3200,
     lastUpdated: "March 2024"
-  }
+  },
+  {
+    id: 16,
+    title: "CompTIA Security+ 701",
+    instructor: "InfoSec Institute Instructor",
+    duration: "8h 45m",
+    rating: 4.7,
+    level: "Beginner",
+    category: "Security",
+    image: "https://e-training.ivorytraining.com/attachments/dependence/qwdsAsIO41Q7YzCgIV1EDas0n6ri0kxHxPxDnJbT.png",
+    tags: ["Security", "Certification", "Networking"],
+    description: "This course prepares individuals to successfuly pass the CompTIA Security+ SY0-701 certification exam. It covers each of the five domains in the Security+ exam: General Security Concepts; Threats, Vulnerabilities, and Mitigations; Security Architecture; Security Operations; and Security Program Management and Oversight. Each course will explain the concepts and terminology covered on the exam and include helpful analogies, memory aids, and practical applications of the material to better remember important key points, with each video providing targeted details of important individual topics or similar, related concepts. The course also includes practice questions and quizzes to help reinforce the material and prepare for the exam.",
+    syllabus: [
+      { title: "General Security Concepts", duration: "2h 00m" },
+      { title: "Threats, Vulnerabilities, and Mitigations", duration: "2h 30m" },
+      { title: "Security Architecture", duration: "2h 15m" },
+      { title: "Security Operations", duration: "2h 00m" }
+    ],
+    students: 1200,
+    lastUpdated: "March 2026"
+  },
+  {
+    id: 17,
+    title: "JavaScript Fundamentals",
+    instructor: "InfoSec Institute Instructor",
+    duration: "8h 45m",
+    rating: 4.7,
+    level: "Beginner",
+    category: "Development",
+    image: "https://www.w3schools.com/JS/img_javascript_480.jpg",
+    tags: ["Development", "Programming", "JavaScript"],
+    description: "Learn the fundamentals of JavaScript programming. Covers variables, functions, arrays, objects, and DOM manipulation.",
+    syllabus: [
+      { title: "Introduction to JavaScript", duration: "2h 00m" },
+      { title: "Variables and Functions", duration: "7h 30m" },
+      { title: "Arrays and Objects", duration: "5h 15m" },
+      { title: "DOM Manipulation", duration: "9h 00m" }
+    ],
+    students: 1200,
+    lastUpdated: "April 2026"
+  } 
 ];

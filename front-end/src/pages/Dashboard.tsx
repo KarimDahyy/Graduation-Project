@@ -13,7 +13,7 @@ export function Dashboard() {
 
       {/* Greeting */}
       <div>
-        <h1 className="text-3xl font-bold text-[#11233E] tracking-tight">Good morning, Alex 👋</h1>
+        <h1 className="text-3xl font-bold text-[#11233E] tracking-tight">Good morning 👋</h1>
         <p className="text-gray-400 text-sm mt-1">Here's what's happening with your career today.</p>
       </div>
 
